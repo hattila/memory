@@ -2,3 +2,20 @@ body {
 	background-color: #cccccc;
 	font-size: 14px;
 }
+#field {
+	max-width: 800px;
+	margin: auto;
+}
+.card {
+	width: 33.3%;
+	height: 100px;
+	float: left;
+	text-align: center;
+	margin: 15px;
+}
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.blue {background-color: blue;}
+.green {background-color: green;}
+.purple {background-color: purple;}
+.orange {background-color: orange;}

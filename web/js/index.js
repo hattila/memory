@@ -5,6 +5,12 @@
 $(document).ready(function(){
     console.log('sdofmn');
     createCards(uniqueCards);
+
+    // click esemény reset gombra
+    $('#reset').click(function(){
+        $field.html('');
+        createCards(uniqueCards);
+    });
 });
 
 var uniqueCards = [
@@ -16,6 +22,8 @@ var uniqueCards = [
     'purple'
 ];
 
+var $field = $('#field');
+
 var createCards = function(data){
     var mergedCards = data.concat(data);
     console.log(mergedCards);
@@ -25,7 +33,6 @@ var createCards = function(data){
 
     var cardTemplate = '<div class="card {color}">{index}</div>';
 
-    var $field = $('#field');
     for (var i=0; i<mergedCards.length; i++) {
         var cardHtml = cardTemplate;
         cardHtml = cardHtml.replace('{color}', mergedCards[i]);
